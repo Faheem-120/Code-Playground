@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Ninja_picture.css">
+    <title>Parallax Ninja-Picture</title>
+</head>
+
+<body>
+    <div id="parallax">
+        <div class="layer bg" data-speed="0.10"></div>
+        <div class="layer overlay" data-speed="0"></div>
+        <div class="layer assassins" data-speed="0.25"></div>
+        <div class="layer bottom" data-speed="0"></div>
+    </div>
+    <section>
+        <img src="/Images/text.png" alt="">
+        <p>
+
+            Introduction:<br>
+
+            Since its debut in 2007, Assassin's Creed has captivated gamers worldwide with its immersive historical
+            settings, engaging narratives, and exhilarating gameplay. Developed by Ubisoft, this iconic video game
+            franchise has left an indelible mark on the gaming industry, blending history, fiction, and adventure in a
+            seamless manner. Over the years, Assassin's Creed has taken players on thrilling journeys across different
+            time periods and locations, exploring significant events, personalities, and secret societies. In this
+            essay, we will delve into the captivating history of the Assassin's Creed series, tracing its origins, key
+            installments, and its evolution as a cultural phenomenon.
+            <br>
+            Origins and Foundation:<br>
+
+            The roots of Assassin's Creed can be traced back to the visionary mind of Jade Raymond, a prominent game
+            producer at Ubisoft. Raymond, along with a team of talented developers, sought to create an innovative
+            gaming experience that would merge history, open-world exploration, and stealth-based gameplay. Drawing
+            inspiration from various sources, including historical novels, conspiracy theories, and real-world
+            landmarks, they set out to create an unforgettable gaming franchise. <br>
+            Assassin's Creed (2007):<br>
+
+            The first installment of the series introduced players to a compelling narrative set during the Third
+            Crusade in the late 12th century. Players assume the role of Altair Ibn-La'Ahad, a skilled Assassin tasked
+            with unraveling a conspiracy that spans across Jerusalem, Acre, and Damascus. Assassin's Creed showcased a
+            unique blend of action, stealth, and parkour-based movements, allowing players to traverse beautifully
+            recreated historical cities and engage in intense combat.
+
+            <br> Assassin's Creed II (2009):<br>
+
+            Building upon the success of its predecessor, Assassin's Creed II transported players to Renaissance Italy,
+            where they stepped into the shoes of Ezio Auditore da Firenze, a charismatic young Assassin seeking
+            vengeance against the Templar Order. This installment expanded on the open-world concept, offering a rich
+            tapestry of historical landmarks, including Florence, Venice, and Rome. With enhanced gameplay mechanics, a
+            captivating story, and memorable characters, Assassin's Creed II became a defining entry in the series.
+            <br>
+            Expansion and Exploration:<br>
+
+            As the franchise grew in popularity, subsequent releases continued to push the boundaries of historical
+            exploration, gameplay mechanics, and narrative depth. From the American Revolution in Assassin's Creed III
+            to the Golden Age of Piracy in Black Flag, players were transported to various eras and locales, immersing
+            themselves in the vividly recreated worlds of history.
+
+            <br> Assassin's Creed Origins (2017):<br>
+
+            With Assassin's Creed Origins, the series underwent a significant transformation, introducing a massive
+            open-world representation of Ancient Egypt. This installment explored the origins of the Assassin
+            Brotherhood, delving into the story of Bayek of Siwa, an Egyptian Medjay and one of the earliest known
+            Assassins. Origins introduced a revamped combat system, RPG elements, and a sprawling landscape that
+            captivated players with its attention to historical detail.
+
+            <br> Assassin's Creed Odyssey (2018):<br>
+
+            Continuing the franchise's evolution, Assassin's Creed Odyssey transported players to Classical Greece
+            during the Peloponnesian War. Gamers embarked on a grand odyssey as either Kassandra or Alexios, exploring
+            ancient cities, battling legendary creatures, and shaping the outcomes of historical events. With its vast
+            scope, branching narratives, and emphasis on player choice, Odyssey further solidified Assassin's Creed as a
+            premier open-world RPG franchise.
+
+            <br> Legacy and Cultural Impact:<br>
+
+            Beyond its commercial success, Assassin's Creed has had a profound cultural impact. The series has sparked
+            curiosity among players about history, encouraging them to delve deeper into the time periods and characters
+            depicted in the games. The franchise has also expanded into other media, including novels, comics, and a
+            feature film, further enriching its lore and engaging a wider
+        </p>
+
+    </section>
+
+    <!-- <<<   Not working javascript, website link "gsap"  >>> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
+    <!-- <<<<custom Javascript not be working >>>>> -->
+    <!-- <script>
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                tigger: "#parallax",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        gsap.utils.toArray(".layer").foreach(layer => {
+            const speed = layer.dataset.speed;
+            const movement = -(layer.offsetHeight * speed)
+            tl.to(layer, {y: movement,ease: "none" }, 0)
+        });
+    </script> -->
+</body>
+
+</html>
